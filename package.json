@@ -1,0 +1,28 @@
+{
+  "name": "analista_testes_pleno_beedoo",
+  "version": "1.0.0",
+  "description": "**Teste Técnico - Analista de Testes Pleno Beedoo**",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run",
+    "record": "npx cypress run --record --key 1eace686-24ad-4e13-90c5-fd5325362ab3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Djfrazito/analista_testes_pleno_beedoo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Djfrazito/analista_testes_pleno_beedoo/issues"
+  },
+  "homepage": "https://github.com/Djfrazito/analista_testes_pleno_beedoo#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^7.1.0",
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  }
+}
