@@ -37,26 +37,33 @@ class SignupPage {
   }
 
   Login() {
+
     cy.get(signupElements.submitLogin()).click()
+
   }
 
   loginEmpty() {
+
     cy.get(signupElements.inputEmail()).should('be.visible')
     cy.get(signupElements.inputPassword()).should('be.visible')
+
   }
 
   loginEmail(user) {
 
     cy.get(signupElements.inputEmail()).type(user.email)
     cy.get(signupElements.inputPassword()).should('be.visible')
+
   }
   loginData(user) {
 
     cy.get(signupElements.inputEmail()).should('be.visible').type(user.email)
     cy.get(signupElements.inputPassword()).should('be.visible').type(user.password)
+
   }
 
   errorValidation(error) {
+    
     cy.contains(error).should('have.text', error)
 
   }
